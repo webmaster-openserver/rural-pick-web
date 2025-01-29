@@ -1,66 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RURAL PICK</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-         <header class="header">
-              <div class="Tu escape Favorito">Menu</div>
-              <input type="checkbox" id="toggle">
-              <label for="toggle"><alt="Menu"></label>
-         <nav class="navigation">
-                
-     <h1>Tu escape perfecto</h1>   
-        <li><a href="#">Inicio</a></li>
-          <ul>
-            <li><a href="#">Nuestra Historia</a></li>
-            <li><a href="#">Ubicación</a></li>
-          </ul>  
-        </nav>
-        <nav>
-        <li><a href="">Servicios</a></li>
-          <ul>
-            <li><a href="#">Cabaña Alpina</a></li>
-            <li><a href="#">Cabaña Tradicional</a></li>
-            <li><a href="#">Glamping</a></li>
-          </ul>
-        </nav>
-      <nav>
-        <li><a href="#">Contacto</a></li>
-      </nav>
-           
-    
-     <h2>Servicios</h2>  
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <p style="justify-content: center; ">
-        Bienvenido a Rural Pick, un refugio paradisíaco en Oxapampa, Perú. Conoce nuestras cabañas al estilo tradicional de madera con piscina rústica, poza natural, fogata y muchas actividades más. ¡Reserva ahora y comienza tu aventura!
-     </p>
-<section >
-  
-</section>
-    <h3>Alpina</h3>
-    <p>
-      <img src="IMG/ALPINA.PNG" alt=""width="50%" style="padding: 20px;">
-        Alojamiento único en Oxapampa: acogedora alpina triangular para parejas y familias. Alternativa encantadora con piscina rústica.
-        
-    </p>
-    <h3>Cabaña</h3>
-    <p>
-      <img src="IMG/CABAÑAS.PNG" alt=""width="50%" style="padding: 20px;">
-        Comodidad y privacidad en cabaña de 2 pisos con terraza en Oxapampa. Alternativa encantadora con piscina rústica.
-        
-    </p>
-    <h3>Glamping</h3>
-    <p>
-      <img src="IMG/GLAMPING.PNG" alt="" width="50%" style="padding: 20px;">  
-      Glamping exclusivo en Oxapampa: comodidad, aventura al aire libre, vista al río, fogata y belleza natural.
-        
-        <body>
-    </p>
-    <h2>Contáctanos</h2>
+<body>
+    <header class="header">
+        <img src="img/icons/facebook-icon.png" width="100" alt="">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="">Inicio</a>
+                    <ul>
+                        <li><a href="">Nuestra Historia</a></li>
+                        <li><a href="">Ubicación</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Servicios</a>
+                    <ul>
+                        <li><a href="#">Cabaña Alpina</a></li>
+                        <li><a href="#">Cabaña Tradicional</a></li>
+                        <li><a href="#">Glamping</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contacto</a></li>
+                <li>|</li>
+            </ul>
+            <!--
+            <ul>
+                <li><a href="#"><img src="" alt=""></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            -->
+        </nav>
+    </header>
+    <main>
+        <h2>Servicios</h2>
+        <p>
+            Bienvenido a Rural Pick, un refugio paradisíaco en Oxapampa, Perú. Conoce nuestras cabañas al estilo
+            tradicional de madera con piscina rústica, poza natural, fogata y muchas actividades más. ¡Reserva ahora y
+            comienza tu aventura!
+        </p>
+
+        <section class="servicios">
+            <div>
+                <img src="IMG/ALPINA.PNG" alt="alpina">
+                <div class="tarjeta">
+                    <h3>Alpina</h3>
+                    <p>
+                        Alojamiento único en Oxapampa: acogedora alpina triangular para parejas y familias. Alternativa
+                        encantadora con piscina rústica. <br>
+                        <a href="">Leer más ➡️</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="IMG/CABAÑAS.PNG" alt="cabañas">
+                <div class="tarjeta">
+                    <h3>Alpina</h3>
+                    <p>
+                        Comodidad y privacidad en cabaña de 2 pisos con terraza en Oxapampa. Alternativa encantadora con
+                        piscina rústica. <br>
+                        <a href="">Leer más ➡️</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="IMG/GLAMPING.PNG" alt="Glamping">
+                <div class="tarjeta">
+                    <h3>Alpina</h3>
+                    <p>
+                        Glamping exclusivo en Oxapampa: comodidad, aventura al aire libre, vista al río, fogata y
+                        belleza natural.<br>
+                        <a href="">Leer más ➡️</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--
+        <h3>Alpina</h3>
+        <p>
+            <img src="IMG/ALPINA.PNG" alt="" width="50%" style="padding: 20px;">
+            Alojamiento único en Oxapampa: acogedora alpina triangular para parejas y familias. Alternativa encantadora
+            con piscina rústica.
+
+        </p>
+        <h3>Cabaña</h3>
+        <p>
+            <img src="IMG/CABAÑAS.PNG" alt="" width="50%" style="padding: 20px;">
+            Comodidad y privacidad en cabaña de 2 pisos con terraza en Oxapampa. Alternativa encantadora con piscina
+            rústica.
+
+        </p>
+        <h3>Glamping</h3>
+        <p>
+            <img src="IMG/GLAMPING.PNG" alt="" width="50%" style="padding: 20px;">
+            Glamping exclusivo en Oxapampa: comodidad, aventura al aire libre, vista al río, fogata y belleza natural.
+
+            <body>
+        </p>
+        -->
+    </main>
 </body>
 
 </html>
