@@ -1,0 +1,108 @@
+/* 
+:root => Es una pseudoclase que representa la raíz del documento.
+*/
+:root {
+    --main-color: #fffcf5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+header {
+    width: 90%;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* Estilos del menú principal */
+.menu {
+    background: #333;
+    display: flex;
+}
+
+.menu>li {
+    position: relative;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    background: #333;
+}
+
+.menu>li:hover>a {
+    background: #555;
+}
+
+/* Submenú nivel 1 */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    min-width: 180px;
+    display: none;
+}
+
+.menu li:hover>.submenu {
+    display: block;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    background: #444;
+}
+
+.submenu a:hover {
+    background: #666;
+}
+
+/* Submenú nivel 2 (anidado) */
+.submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #555;
+    min-width: 180px;
+    display: none;
+}
+
+.submenu li:hover>.submenu {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
