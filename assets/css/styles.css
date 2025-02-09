@@ -3,6 +3,8 @@
 */
 :root {
     --main-color: #fffcf5;
+    --secondary-color: #85e69a;
+    --menu-item-width: 90px;
 }
 
 * {
@@ -28,15 +30,21 @@ header {
     align-items: center;
 }
 
-header img {
-    width: 100px;
+header .logo img {
+    width: 80px;
     border: 1px solid black;
     border-radius: 50%;
 }
 
 /* Estilos del menú principal */
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+}
+
 .menu {
-    background: #333;
     display: flex;
 }
 
@@ -46,63 +54,93 @@ header img {
 
 .menu>li>a {
     display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    background: #333;
+    width: var(--menu-item-width);
+    padding: 5px 5px;
 }
 
-.menu>li:hover>a {
-    background: #555;
+.menu>li>a:hover {
+    background-color: #e4d17f;
 }
 
-/* Submenú nivel 1 */
+.menu>li:last-child>a {
+    border-right: 1px solid black;
+}
+
+/* Estilos del submenú */
 .submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background: #444;
-    min-width: 180px;
-    display: none;
+    min-width: var(--menu-item-width);
 }
 
+.submenu li a {
+    display: block;
+    padding: 10px;
+}
+
+.submenu li a:hover {
+    background-color: #dfc656;
+}
+
+/* Mostrando el menú al pasar por el li cabecera */
 .menu li:hover>.submenu {
     display: block;
 }
 
-.submenu li {
-    position: relative;
+/* Mostrando las imagenes de redes sociales */
+.social {
+    display: flex;
+    gap: 8px;
 }
 
-.submenu a {
-    display: block;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    background: #444;
+.social img {
+    width: 24px;
+    border: none;
 }
 
-.submenu a:hover {
-    background: #666;
-}
-
-/* Submenú nivel 2 (anidado) */
-.submenu .submenu {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background: #555;
-    min-width: 180px;
-    display: none;
-}
-
-.submenu li:hover>.submenu {
-    display: block;
-}
-
+/* Estilos para los títulos*/
 h1 {
     text-align: center;
+}
+
+
+/* Pie de página */
+footer {
+    width: 100%;
+    background-color: #d1c6ad;
+    padding: 20px 0 0;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer #social {
+    display: flex;
+    gap: 10px;
+}
+
+footer #social img {
+    width: 24px;
+    border: none;
+}
+
+footer .logo img {
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#copyright {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #dbbc71;
 }
